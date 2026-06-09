@@ -3,7 +3,7 @@ services:
     nginx-server:
         build: .
         ports:
-            - "80:80"
+            - "8800:80"
         restart: unless-stopped
         volumes:
             - "./backend/storage/logs:/var/www/college-quiz-app/storage/logs"
